@@ -1,30 +1,23 @@
-using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
 public class HorseAnimations : MonoBehaviour
 {
-    public PlayerController player;
-    public Animation anim;
+    public GameObject horse;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Start()
+    void Start()
     {
-        anim = GetComponent<Animation>();
-        anim["Horse_001_run"].layer = 123;
-        anim["Horse_001_idle"].layer = 123;
-    }
-    public void Update()
-    {
-        if (player.inputDirection.sqrMagnitude > 0.01f)
-        {
-            anim.Play("Horse_001_run");
-        }
-        else
-        {
-            anim.Play("Horse_001_idle");
-        }
-        
+  
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            horse.GetComponent<Animator>().Play("Horse_001_walk");
+        }
+    }
 }
