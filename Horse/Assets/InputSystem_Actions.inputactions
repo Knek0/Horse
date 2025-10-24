@@ -1,5 +1,4 @@
 {
-    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -85,24 +84,6 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "TurnCameraLeft",
-                    "type": "Button",
-                    "id": "9f707518-eda4-468c-9e67-ba0cae5d88b1",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "Press(behavior=2)",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "TurnCameraRight",
-                    "type": "Button",
-                    "id": "d217e256-d053-47fa-8800-13765acc1f2e",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": false
                 }
             ],
@@ -489,28 +470,6 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "66ae6574-5a90-4773-a481-9732f4fa60f2",
-                    "path": "<Keyboard>/#(E)",
-                    "interactions": "Hold",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "TurnCameraLeft",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a41d8919-3525-4448-ba2d-a8fa59887b9b",
-                    "path": "<Keyboard>/#(Q)",
-                    "interactions": "Hold",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "TurnCameraRight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
