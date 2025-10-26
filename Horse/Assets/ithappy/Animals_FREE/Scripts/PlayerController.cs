@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         // Create a 3D movement vector using the X and Y inputs.
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+        Vector3 movement = new(movementX, 0.0f, movementY);
 
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
         if (movement != Vector3.zero)
         {
             float angle = Mathf.Atan2(movementX, movementY) * Mathf.Rad2Deg;
-            Vector3 rotation = new Vector3(0, angle, 0); //Rotate around the y-axis
+            Vector3 rotation = new(0, angle, 0); //Rotate around the y-axis
             transform.eulerAngles = rotation;
         }
     }
