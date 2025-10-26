@@ -20,10 +20,10 @@ public class HorsePos : MonoBehaviour
     // LateUpdate is called once per frame after all Update functions have been completed.
     void LateUpdate()
     {
-        Vector3 rotationVector = new(0, player.transform.rotation.y, 0);
         // Maintain the same offset between the horse and player throughout the game.
-        transform.position = player.transform.position + offset;
-        transform.rotation = rotationVector;
+        transform.SetPositionAndRotation(
+            player.transform.position + offset,
+            Quaternion.Euler(0, player.transform.eulerAngles.y, 0)
+        );
     }
-
 }
