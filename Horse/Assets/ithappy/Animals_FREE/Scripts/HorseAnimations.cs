@@ -1,23 +1,23 @@
-using Unity.VisualScripting;
+using UnityEngine.InputSystem;
 using UnityEngine;
 
 
 public class HorseAnimations : MonoBehaviour
 {
-    public GameObject horse;
+    public Animation horse;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        horse = GetComponent<Animation>();
   
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnMove()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            horse.GetComponent<Animator>().Play("Horse_001_walk");
-        }
+        horse.Play("Horse_001_run");
     }
+
+    
+        
+  
 }
