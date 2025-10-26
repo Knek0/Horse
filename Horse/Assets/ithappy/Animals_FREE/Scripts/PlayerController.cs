@@ -37,13 +37,6 @@ public class PlayerController : MonoBehaviour
         movementY = movementVector.y;
     }
 
-    void OnShoot(InputValue movementValue)
-    {
-        // Placeholder for shooting functionality.
-        Debug.Log("Pew Pew");
-        GameObject bullet = Instantiate(bulletPrefab, transform.position + transform.forward * 1.10f + transform.up * 1.05f, transform.rotation);
-    }
-
     // FixedUpdate is called once per fixed frame-rate frame.
     private void FixedUpdate()
     {
