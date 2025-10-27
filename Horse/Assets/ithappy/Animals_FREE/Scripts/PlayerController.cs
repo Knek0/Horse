@@ -45,13 +45,5 @@ public class PlayerController : MonoBehaviour
 
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
-
-        // Fix: Check if movement is zero using Vector3's equality operator
-        if (movement != Vector3.zero)
-        {
-            float angle = Mathf.Atan2(movementX, movementY) * Mathf.Rad2Deg;
-            Vector3 rotation = new(0, angle, 0); //Rotate around the y-axis
-            transform.eulerAngles = rotation;
-        }
     }
 }
