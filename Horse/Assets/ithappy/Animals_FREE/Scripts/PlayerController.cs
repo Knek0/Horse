@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -45,5 +46,15 @@ public class PlayerController : MonoBehaviour
 
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
+    }
+
+    internal float GetMovementX()
+    {
+        throw new NotImplementedException();
+    }
+
+    internal float GetMovementY()
+    {
+        throw new NotImplementedException();
     }
 }
