@@ -17,7 +17,4 @@ public class HorseAnimations : MonoBehaviour
         horse.Play("Horse_001_run");
     }
 
-    
-        
-  
 }
