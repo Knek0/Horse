@@ -936,7 +936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6c19454f0822c418affa10c11e2584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  bulletPrefab: {fileID: 0}
   speed: 5
 --- !u!54 &1845855687
 Rigidbody:
@@ -1104,7 +1103,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3017dc20f90b31b419334f2a258d78cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  player: {fileID: 1845855684}
+  ball: {fileID: 1845855691}
+  ballRigidbody: {fileID: 1845855687}
+  ballRadius: 0.75
+  heightOffset: 0
+  rotationLerpSpeed: 10
 --- !u!114 &1970908125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,7 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12443d064d27964fa7cd4085bdb03f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  horse: {fileID: 0}
+  horse: {fileID: 1970908128}
 --- !u!111 &1970908128
 Animation:
   m_ObjectHideFlags: 0
