@@ -7,9 +7,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    //Bullet Object
-    public GameObject bulletPrefab;
-
     // Rigidbody of the player.
     private Rigidbody rb;
 
@@ -28,7 +25,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // This function is called when a move input is detected.
-    void OnMove(InputValue movementValue)
+    public void OnMove(InputValue movementValue)
     {
         // Convert the input value into a Vector2 for movement.
         Vector2 movementVector = movementValue.Get<Vector2>();
@@ -46,15 +43,5 @@ public class PlayerController : MonoBehaviour
 
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
-    }
-
-    internal float GetMovementX()
-    {
-        throw new NotImplementedException();
-    }
-
-    internal float GetMovementY()
-    {
-        throw new NotImplementedException();
     }
 }

@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 1, z: 0}
     speed: 2
-    m_Value: {x: -1.9933727, y: 0.093073845, z: 0.52891654}
+    m_Value: {x: 0, y: 1, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1188,13 +1188,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.2784596, y: 0.39728585, z: -0.12785998, w: -0.8650694}
+    m_Target: {x: -0.27540696, y: 0.12389906, z: -0.03579417, w: -0.95268923}
     speed: 2
-    m_Value: {x: -0.23523632, y: 0.5765462, z: -0.17795724, w: -0.7620084}
+    m_Value: {x: -0.2784596, y: 0.39728585, z: -0.12785998, w: -0.86506945}
   m_Size:
     m_Target: 1.299038
     speed: 2
-    m_Value: 2.3994102
+    m_Value: 1.299038
   m_Ortho:
     m_Target: 0
     speed: 2
