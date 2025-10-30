@@ -10,12 +10,6 @@ public class ObjectOnTopRotateWithBall : MonoBehaviour
 
     private Vector3 lastForward = Vector3.forward; // Used to smooth facing direction
 
-    void Start()
-    {
-        if (ballRigidbody == null)
-            ballRigidbody = ball.GetComponent<Rigidbody>();
-    }
-
     void LateUpdate()
     {
         // 1. Keep the object directly above the ball

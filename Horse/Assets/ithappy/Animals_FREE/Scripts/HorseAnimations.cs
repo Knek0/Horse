@@ -12,7 +12,7 @@ public class HorseAnimations : MonoBehaviour
         horse = GetComponent<Animation>();
   
     }
-    private void OnMove()
+    public void OnMove()
     {
         horse.Play("Horse_001_run");
     }
