@@ -24,11 +24,11 @@ public class Horse : MonoBehaviour
 
         Vector3 direction = Vector3.zero;
 
-        if (!faceMovementDirection && ball != null && player != null && player.inputDirection.sqrMagnitude > 0.01f)
+        if (player.inputDirection.sqrMagnitude > 0.01f)
         {
             direction = player.inputDirection;
         }
-        else if (rb != null && rb.linearVelocity.sqrMagnitude > 0.05f)
+        else if (rb.linearVelocity.sqrMagnitude > 0.05f)
         {
             direction = rb.linearVelocity.normalized;
         }
