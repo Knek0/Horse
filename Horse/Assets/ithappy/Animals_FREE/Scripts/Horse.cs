@@ -3,7 +3,6 @@ public class Horse : MonoBehaviour
 {
     public Transform ball;              // Reference to the rolling ball
     public float rotationSpeed = 5.0f;    // Speed of rotation smoothing
-    public bool faceMovementDirection = false; // Whether to face movement direction
     public PlayerController player; // Reference to the PlayerController script
     public float ballRadius = 0.75f;    // For a sphere scaled to 1.5
     public float heightOffset = 0.0f;   // Extra vertical offset above ball
