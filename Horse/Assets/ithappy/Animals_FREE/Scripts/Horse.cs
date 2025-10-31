@@ -2,7 +2,6 @@ using UnityEngine;
 public class Horse : MonoBehaviour
 {
     public Transform ball;              // Reference to the rolling ball
-    public Rigidbody ballRigidbody;     // The ball's Rigidbody
     public float rotationSpeed = 5.0f;    // Speed of rotation smoothing
     public bool faceMovementDirection = false; // Whether to face movement direction
     public PlayerController player; // Reference to the PlayerController script
@@ -25,11 +24,7 @@ public class Horse : MonoBehaviour
 
         Vector3 direction = Vector3.zero;
 
-        if (faceMovementDirection && rb != null && rb.linearVelocity.sqrMagnitude > 0.01f)
-        {
-            direction = rb.linearVelocity.normalized;
-        }
-        else if (!faceMovementDirection && ball != null && player != null && player.inputDirection.sqrMagnitude > 0.01f)
+        if (!faceMovementDirection && ball != null && player != null && player.inputDirection.sqrMagnitude > 0.01f)
         {
             direction = player.inputDirection;
         }
