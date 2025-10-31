@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     // Speed at which the player moves.
     public float speed = 0;
 
+    // Add this property to expose the input direction for use in other scripts
+    public Vector3 inputDirection { get; private set; }
+
     // Start is called before the first frame update.
     void Start()
     {
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour
         // Store the X and Y components of the movement.
         movementX = movementVector.x;
         movementY = movementVector.y;
+        inputDirection = new Vector3(movementX, 0, movementY);
     }
 
     // FixedUpdate is called once per fixed frame-rate frame.
