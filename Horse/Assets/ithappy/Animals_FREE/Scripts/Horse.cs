@@ -2,13 +2,10 @@ using UnityEngine;
 public class Horse : MonoBehaviour
 {
     public Transform ball;              // Reference to the rolling ball
-    public float rotationSpeed = 5.0f;    // Speed of rotation smoothing
     public PlayerController player; // Reference to the PlayerController script
     public float ballRadius = 0.75f;    // For a sphere scaled to 1.5
     public float heightOffset = 0.0f;   // Extra vertical offset above ball
     public Rigidbody rb;              // Rigidbody of the ball
-
-    private Vector3 lastForward = Vector3.forward; // Used to smooth facing direction
 
     void LateUpdate()
     {
@@ -42,7 +39,7 @@ public class Horse : MonoBehaviour
         if (direction.sqrMagnitude > 0.01f)
         {
             Quaternion targetRotation = Quaternion.LookRotation(direction, Vector3.up);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5);
         }
     }
 }
