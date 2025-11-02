@@ -656,9 +656,6 @@ PrefabInstance:
       addedObject: {fileID: 1970908124}
     - targetCorrespondingSourceObject: {fileID: 3851015956068934394, guid: dfb23d60f30c46847ba7815aa09e2567, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1970908125}
-    - targetCorrespondingSourceObject: {fileID: 3851015956068934394, guid: dfb23d60f30c46847ba7815aa09e2567, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1970908132}
   m_SourcePrefab: {fileID: 100100000, guid: dfb23d60f30c46847ba7815aa09e2567, type: 3}
 --- !u!1 &1354953974
@@ -1106,20 +1103,6 @@ MonoBehaviour:
   ballRadius: 0.75
   heightOffset: 0
   rb: {fileID: 1845855687}
---- !u!114 &1970908125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970908115}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12443d064d27964fa7cd4085bdb03f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  player: {fileID: 1845855685}
-  anim: {fileID: 0}
 --- !u!95 &1970908132
 Animator:
   serializedVersion: 7
