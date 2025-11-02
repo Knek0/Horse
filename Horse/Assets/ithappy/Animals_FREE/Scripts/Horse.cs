@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 public class Horse : MonoBehaviour
 {
@@ -6,6 +7,12 @@ public class Horse : MonoBehaviour
     public float ballRadius = 0.75f;    // For a sphere scaled to 1.5
     public float heightOffset = 0.0f;   // Extra vertical offset above ball
     public Rigidbody rb;              // Rigidbody of the ball
+    private Animator anim;
+
+    void Awake()
+    {
+        anim =  GetComponent<Animator>();
+    }
 
     void LateUpdate()
     {
@@ -20,13 +27,24 @@ public class Horse : MonoBehaviour
 
         Vector3 direction = Vector3.zero;
 
+        anim.SetFloat("Vert", 0.0f);
+        anim.SetFloat("State", 0.0f);
         if (player.inputDirection.sqrMagnitude > 0.01f)
         {
             direction = player.inputDirection;
+            anim.SetFloat("Vert", 1.0f);
+            anim.SetFloat("State", 1.0f);
         }
         else if (rb.linearVelocity.sqrMagnitude > 0.05f)
         {
             direction = rb.linearVelocity.normalized;
+            anim.SetFloat("Vert", 1.0f);
+            anim.SetFloat("State", 0.0f);
+        }
+        else if (rb.linearVelocity.sqrMagnitude < 0.05f)
+        {
+            anim.SetFloat("Vert", 0.0f);
+            anim.SetFloat("State", 0.0f);
         }
 
         // --- Only rotate on the Y-axis ---
