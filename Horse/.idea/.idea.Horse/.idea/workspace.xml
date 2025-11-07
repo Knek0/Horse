@@ -41,18 +41,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="QodanaHighlightedReportService">
-    <option name="localRunNotPublishedPersistedInfo">
-      <LocalReportPersistedInfo>
-        <option name="path" value="C:\Users\lkclo\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
-        <option name="reportGuid" value="d50df77a-cb4d-4328-ad0c-16ff39f2388a" />
-        <option name="reportName" value="Horse/qodana/2025-10-31" />
-      </LocalReportPersistedInfo>
-    </option>
-  </component>
-  <component name="QodanaIsSelectedPersistenceService">
-    <option name="selectedOrLoading" value="true" />
-  </component>
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription localRun="true" path="C:\Users\lkclo\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="d50df77a-cb4d-4328-ad0c-16ff39f2388a" reportId="Horse/qodana/2025-10-31" />
@@ -123,6 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1761907570736</updated>
       <workItem from="1761907572172" duration="5488000" />
+      <workItem from="1762508196620" duration="1272000" />
     </task>
     <servers />
   </component>
