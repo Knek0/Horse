@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour
 {
     // Reference to the player GameObject.
     public GameObject player;
+    public PlayerController playerScript;
 
     // The distance between the camera and the player.
     private Vector3 offset;
