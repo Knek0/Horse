@@ -1,9 +1,14 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerController : MonoBehaviour
 {
-    public AudioSource track1;
 
     // Rigidbody of the player.
     private Rigidbody rb;
@@ -45,14 +50,5 @@ public class PlayerController : MonoBehaviour
 
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Carrot"))
-        {
-            other.gameObject.SetActive(false);
-            track1.Play();
-        }
     }
 }
