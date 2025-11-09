@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 103
+  controlID: 43
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -455,7 +455,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/ithappy/Animals_FREE/Prefabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -465,16 +465,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 35
   m_LastFolders:
-  - Assets
+  - Assets/ithappy/Animals_FREE/Prefabs
   m_LastFoldersGridSize: 35
   m_LastProjectPath: C:\Users\lkclo\Horse\Horse
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 3ab10000
-    m_LastClickedID: 45370
-    m_ExpandedIDs: 000000003ab1000000ca9a3bffffff7f
+    m_SelectedIDs: e4b20000
+    m_LastClickedID: 45796
+    m_ExpandedIDs: 000000002eb100006ab20000d8b2000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,7 +503,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003ab10000
+    m_ExpandedIDs: 000000002eb10000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000000000058d400004cb50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -648,10 +648,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: c8faffff
+      scrollPos: {x: 0, y: 96}
+      m_SelectedIDs: 0caf0000
+      m_LastClickedID: 44812
+      m_ExpandedIDs: e8fafffff8ad0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1157,9 +1157,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.9300623, y: 0.302351, z: 3.5608606}
+    m_Target: {x: -0.6566352, y: -3.0172982, z: 4.4892716}
     speed: 2
-    m_Value: {x: -2.9300623, y: 0.302351, z: 3.5608606}
+    m_Value: {x: -0.6566352, y: -3.0172982, z: 4.4892716}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1205,13 +1205,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.109326944, y: 0.8461018, z: -0.19045775, w: -0.48568135}
+    m_Target: {x: -0.43749136, y: -0.068142675, z: 0.033268888, w: -0.89602584}
     speed: 2
-    m_Value: {x: -0.10909825, y: 0.84668356, z: -0.19058868, w: -0.4846654}
+    m_Value: {x: -0.4374889, y: -0.068142295, z: 0.0332687, w: -0.8960208}
   m_Size:
-    m_Target: 10
+    m_Target: 6.136566
     speed: 2
-    m_Value: 9.19187
+    m_Value: 6.136566
   m_Ortho:
     m_Target: 0
     speed: 2
