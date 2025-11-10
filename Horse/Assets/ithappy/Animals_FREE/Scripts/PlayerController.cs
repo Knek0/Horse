@@ -54,5 +54,10 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             track1.Play();
         }
+
+        if (other.gameObject.CompareTag("DeathBox"))
+        {
+            transform.position = new Vector3(0, 2, 0);
+        }
     }
 }
