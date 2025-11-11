@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("DeathBox"))
         {
             transform.position = new Vector3(0, 2, 0);
-            rb.AddForce(rb.linearVelocity * -1, ForceMode.Impulse);
+            rb.AddTorque(rb.angularVelocity * -0.9f, ForceMode.Impulse);
         }
     }
 }
