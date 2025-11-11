@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public AudioSource track1;
+    public AudioSource track2;
 
     // Rigidbody of the player.
     private Rigidbody rb;
@@ -59,6 +60,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(0, 2, 0);
             rb.AddTorque(rb.angularVelocity * -0.9f, ForceMode.Impulse);
+            track2.Play();
         }
     }
 }
