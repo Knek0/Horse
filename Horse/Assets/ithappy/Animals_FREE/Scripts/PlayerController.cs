@@ -59,7 +59,6 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(0, 2, 0);
             rb.AddForce(rb.linearVelocity * -1, ForceMode.Impulse);
-            Vector3 resetVelocity = Vector3.zero;
         }
     }
 }
